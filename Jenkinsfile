@@ -7,7 +7,7 @@ pipeline {
           sh 'mvn clean package'
       }
     }
-    stage('Deploy to Dev Tomcat') {
+    stage('Deploy to Tomcat') {
       steps {
         echo "coming soon..."
       }
