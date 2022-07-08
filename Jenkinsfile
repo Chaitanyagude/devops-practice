@@ -1,4 +1,3 @@
-@Library("javahome-libs") _
 pipeline {
   agent any
 
@@ -10,7 +9,7 @@ pipeline {
     }
     stage('Deploy to Dev Tomcat') {
       steps {
-        tomcatDeploy('172.31.9.112','app','tomcat-dev')
+        echo "coming soon..."
       }
     }
   }
