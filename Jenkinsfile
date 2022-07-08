@@ -1,10 +1,18 @@
 pipeline {
   agent any
   stages {
-    stage('Maven Build') {
+    stage('Sample') {
       steps {
-        sh 'echo Jenkinsfile demo'
+        sh "echo Hello..."
       }
+    }
+  }
+  post {
+    success {
+      echo "This is success block'
+    }
+    failure {
+      echo "This is failure block"
     }
   }
 }
